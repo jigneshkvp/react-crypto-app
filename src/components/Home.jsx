@@ -1,11 +1,10 @@
 import { Box, Image, Text } from "@chakra-ui/react";
 import React from "react";
-import btcSrc from "../assets/btc.png";
 import { motion } from "framer-motion";
 
 const Home = () => {
   return (
-    <Box bgColor={"blackAlpha.900"} w={"full"} h={"85vh"}>
+    <Box bgColor={"blackAlpha.900"} w={"full"} h={"full"}>
       <motion.div
         style={{
           height: "80vh",
@@ -22,8 +21,10 @@ const Home = () => {
         <Image
           w={"full"}
           h={"full"}
-          objectFit={"contain"}
-          src={btcSrc}
+          objectFit={"scale-down"}
+          src={
+            "https://www.freepnglogos.com/uploads/bitcoin-png/bitcoin-multiply-btc-pick-and-profit-5.png"
+          }
           filter={"grayscale(1)"}
         />
       </motion.div>
